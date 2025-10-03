@@ -6,12 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Artist;
 use App\Http\Resources\ArtistResource;
 
-/**
- * @OA\Server(
- *     url="http://localhost:8000/api",
- *     description="Local API Server"
- * )
- */
 
 /**
  * @OA\Schema(
@@ -30,7 +24,7 @@ class ArtistController extends Controller
      * Display a listing of the resource.
      *
      * @OA\Get(
-     *     path="/api/artists",
+     *     path="/artists",
      *     summary="Liste des artistes",
      *     tags={"Artists"},
      *     @OA\Parameter(
@@ -92,7 +86,7 @@ class ArtistController extends Controller
      * Store a newly created resource in storage.
      *
      * @OA\Post(
-     *     path="/api/artists",
+     *     path="/artists",
      *     summary="Créer un nouvel artiste",
      *     tags={"Artists"},
      *     @OA\RequestBody(
@@ -126,7 +120,7 @@ class ArtistController extends Controller
      * Display the specified resource.
      *
      * @OA\Get(
-     *     path="/api/artists/{id}",
+     *     path="/artists/{id}",
      *     summary="Afficher un artiste",
      *     tags={"Artists"},
      *     @OA\Parameter(
@@ -155,7 +149,7 @@ class ArtistController extends Controller
      * Update the specified resource in storage.
      *
      * @OA\Put(
-     *     path="/api/artists/{id}",
+     *     path="/artists/{id}",
      *     summary="Mettre à jour un artiste",
      *     tags={"Artists"},
      *     @OA\Parameter(
@@ -194,7 +188,7 @@ class ArtistController extends Controller
      * Remove the specified resource from storage.
      *
      * @OA\Delete(
-     *     path="/api/artists/{id}",
+     *     path="/artists/{id}",
      *     summary="Supprimer un artiste",
      *     tags={"Artists"},
      *     @OA\Parameter(
@@ -222,7 +216,7 @@ class ArtistController extends Controller
      * Get artist albums.
      *
      * @OA\Get(
-     *     path="/api/artists/{id}/albums",
+     *     path="/artists/{id}/albums",
      *     summary="Récupérer les albums d’un artiste",
      *     tags={"Artists"},
      *     @OA\Parameter(

@@ -10,7 +10,7 @@
     },
     "servers": [
         {
-            "url": "http://127.0.0.1:8000/api",
+            "url": "http://127.0.0.1:8000",
             "description": "Serveur Local"
         }
     ],
@@ -221,14 +221,14 @@
                 }
             }
         },
-        "/api/artists": {
+        "/artists": {
             "get": {
                 "tags": [
                     "Artists"
                 ],
                 "summary": "Liste des artistes",
                 "description": "Display a listing of the resource.",
-                "operationId": "2c8aed1387cca1c65d98da7ee11ac926",
+                "operationId": "392d5b22a13c0e6acda09059973b671b",
                 "parameters": [
                     {
                         "name": "genre",
@@ -293,7 +293,7 @@
                 ],
                 "summary": "Créer un nouvel artiste",
                 "description": "Store a newly created resource in storage.",
-                "operationId": "83d2888bdc6fac66b9a7cc81c4c950fb",
+                "operationId": "02d849b7e76cdecf89814f7cf5ad17e3",
                 "requestBody": {
                     "required": true,
                     "content": {
@@ -337,14 +337,14 @@
                 }
             }
         },
-        "/api/artists/{id}": {
+        "/artists/{id}": {
             "get": {
                 "tags": [
                     "Artists"
                 ],
                 "summary": "Afficher un artiste",
                 "description": "Display the specified resource.",
-                "operationId": "d0b68c06b8bc310fbe24c6d3ea80dac3",
+                "operationId": "72409b143e96ba16780ec0cf7bf56b62",
                 "parameters": [
                     {
                         "name": "id",
@@ -378,7 +378,7 @@
                 ],
                 "summary": "Mettre à jour un artiste",
                 "description": "Update the specified resource in storage.",
-                "operationId": "5a5632ea389f9a05336f8d035f5a44c0",
+                "operationId": "5384c3d91429ef750acd6efe62cddef3",
                 "parameters": [
                     {
                         "name": "id",
@@ -433,7 +433,7 @@
                 ],
                 "summary": "Supprimer un artiste",
                 "description": "Remove the specified resource from storage.",
-                "operationId": "4f6d8bd2c8b4b738af7589b72348ac20",
+                "operationId": "8b4067da292e7b4c226ffb95ecbe82e9",
                 "parameters": [
                     {
                         "name": "id",
@@ -465,14 +465,14 @@
                 }
             }
         },
-        "/api/artists/{id}/albums": {
+        "/artists/{id}/albums": {
             "get": {
                 "tags": [
                     "Artists"
                 ],
                 "summary": "Récupérer les albums d’un artiste",
                 "description": "Get artist albums.",
-                "operationId": "e53db41d596c04b2e67cdbf5af13ddd6",
+                "operationId": "d21b4e8dd012629b0af0b1f4f1ca7fa4",
                 "parameters": [
                     {
                         "name": "id",
